@@ -19,8 +19,6 @@ var masterLoop = function(timestamp) {
   window.requestAnimationFrame(masterLoop);
 }
 masterLoop(performance.now());
-
-
 /**
  * @function update
  * Updates the game state, moving
@@ -30,7 +28,7 @@ masterLoop(performance.now());
  * the number of milliseconds passed since the last frame.
  */
 function update(elapsedTime) {
-
+  player.update(elapsedTime);
   // TODO: Update the game objects
 }
 
